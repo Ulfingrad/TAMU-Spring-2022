@@ -7,7 +7,7 @@ const Home: NextPage = () => {
     <MarketingLayout>
       <VStack alignItems="center" paddingY={32} spacing={8}>
         <Heading size="4xl" textAlign="center" lineHeight="1.4">
-          The Web App Template of the Emerging Tech EOA Team
+          The Web App Template of the Emerging Tech EOD Team
         </Heading>
         <Text textAlign="center" maxWidth="60ch" fontSize="2xl" lineHeight="2">
           You&apos;ve got a production ready React.js frontend (with Dark Mode) and Express.js
