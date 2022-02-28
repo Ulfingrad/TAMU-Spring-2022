@@ -53,7 +53,7 @@ export default {
   type: 'postgresql' as const,
   clientUrl: env.databaseUrl,
   user: env.databaseUser,
-  password: "Passowrd",
+  password: "Password",
   entities: [`${__dirname}/entities/*.js`],
   entitiesTs: [`${__dirname}/entities/*.ts`],
   forceUndefined: true,
