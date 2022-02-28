@@ -1,0 +1,10 @@
+{
+  "test": {
+    "link": "post",
+    "content": "post content 1"
+  },
+  "second": {
+    "link": "second post",
+    "content": "post content 2"
+  }
+}
