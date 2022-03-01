@@ -1,20 +1,12 @@
 import { NextPage } from 'next';
 
-import { Button, Heading, HStack, Text, VStack } from '@chakra-ui/react';
+import { Button, Badge, Center, Flex, Heading, HStack, Image, Link, Stack, Text, useColorModeValue, VStack } from '@chakra-ui/react';
 import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react'
-import {
-  Badge,
-  Center,
-  Flex,
-  Image,
-  Link,
-  Stack,
-  useColorModeValue,
-} from '@chakra-ui/react';
 
 import { MarketingLayout } from '../../components/Layout';
 
 import links from './links.json';
+import styles from './recommendations.module.css';
 
 const Recommendations: NextPage = () => {
   return (
@@ -39,7 +31,7 @@ const Recommendations: NextPage = () => {
           })}
         </ol>
 
-        <ol>
+        <ul className={styles.ul}>
           {Object.entries(links).map((value, index) => {
             return <li key={index}>
               <Center py={6}>
@@ -112,7 +104,7 @@ const Recommendations: NextPage = () => {
               </Center>
           </li>;
           })}
-        </ol>
+        </ul>
 
         <Center py={6}>
           <Stack
